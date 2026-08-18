@@ -48,8 +48,10 @@ module PuppetfileResolver
           err_msg += config.proxy ? " with proxy #{config.proxy}: " : ': '
           response = nil
 
+          auth_token = config.token if config.respond_to?(:token)
+
           begin
-            response = ::PuppetfileResolver::Util.net_http_get(uri, config.proxy)
+            response = ::PuppetfileResolver::Util.net_http_get(uri, config.proxy, auth_token)
           rescue ::StandardError => e
             raise err_msg + e.message
           end

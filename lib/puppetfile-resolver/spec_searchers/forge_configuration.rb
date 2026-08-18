@@ -11,7 +11,7 @@ module PuppetfileResolver
 
       attr_writer :forge_api
 
-      attr_accessor :proxy
+      attr_accessor :proxy, :token
     end
   end
 end

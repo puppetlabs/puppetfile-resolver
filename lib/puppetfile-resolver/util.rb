@@ -26,7 +26,7 @@ module PuppetfileResolver
     # @param [String, URI] uri The URI to request
     # @param [nil, String, URI] proxy The URI of the proxy server to use. Defaults to nil (No proxy server)
     # @return [Net::HTTPResponse] the response of the request
-    def self.net_http_get(uri, proxy = nil)
+    def self.net_http_get(uri, proxy = nil, token = nil)
       uri = URI.parse(uri) unless uri.is_a?(URI)
 
       http_options = { :use_ssl => uri.instance_of?(URI::HTTPS) }
@@ -42,7 +42,11 @@ module PuppetfileResolver
         start_args.concat([proxy.host, proxy.port, proxy.user, proxy.password])
       end
 
-      Net::HTTP.start(*start_args, http_options) { |http| return http.request(Net::HTTP::Get.new(uri)) }
+      Net::HTTP.start(*start_args, http_options) do |http|
+        request = Net::HTTP::Get.new(uri)
+        request['Authorization'] = token unless token.nil?
+        return http.request(request)
+      end
       nil
     end
 
