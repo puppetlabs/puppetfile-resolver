@@ -11,6 +11,9 @@ group :test do
   gem 'rubocop', '~> 1.50.0'
   gem 'rubocop-rspec', '~> 2.19'
   gem 'rubocop-performance', '~> 1.16'
+  # Ruby 4.0 unbundled benchmark from the standard library; rubocop 1.50.2 still requires
+  # it directly at startup.
+  gem 'benchmark'
 
   gem 'simplecov'
   gem 'simplecov-console'
