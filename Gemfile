@@ -16,6 +16,8 @@ group :test do
   gem 'base64'
   gem 'benchmark'
   gem 'tsort'
+  gem 'ostruct'
+  gem 'logger'
 
   gem 'simplecov'
   gem 'simplecov-console'
