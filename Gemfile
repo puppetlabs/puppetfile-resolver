@@ -11,9 +11,11 @@ group :test do
   gem 'rubocop', '~> 1.50.0'
   gem 'rubocop-rspec', '~> 2.19'
   gem 'rubocop-performance', '~> 1.16'
-  # Ruby 4.0 unbundled benchmark from the standard library; rubocop 1.50.2 still requires
-  # it directly at startup.
+  # rubocop 1.50.2 still requires these directly; unbundled from the standard library by
+  # Ruby (base64 since 3.4.0, benchmark since 4.0.0, tsort from 4.1.0).
+  gem 'base64'
   gem 'benchmark'
+  gem 'tsort'
 
   gem 'simplecov'
   gem 'simplecov-console'
