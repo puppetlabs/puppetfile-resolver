@@ -11,12 +11,13 @@ group :test do
   gem 'rubocop', '~> 1.50.0'
   gem 'rubocop-rspec', '~> 2.19'
   gem 'rubocop-performance', '~> 1.16'
-  # rubocop 1.50.2 still requires these directly; unbundled from the standard library by
-  # Ruby (base64 since 3.4.0, benchmark since 4.0.0, tsort from 4.1.0).
+  # rubocop 1.50.2 still requires these directly; unbundled from the standard library
+  # since Ruby 3.4.0 (base64) or 4.0.0 (benchmark, ostruct).
   gem 'base64'
   gem 'benchmark'
-  gem 'tsort'
   gem 'ostruct'
+  # required directly by spec/unit/puppetfile-resolver/spec_searchers/git/gclone_spec.rb;
+  # unbundled from the standard library since Ruby 4.0.0.
   gem 'logger'
 
   gem 'simplecov'
