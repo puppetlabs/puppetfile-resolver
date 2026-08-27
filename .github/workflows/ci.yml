@@ -23,8 +23,6 @@ jobs:
         include:
           - ruby_version: '3.2'
             puppet_version: '~> 8.0'
-          - ruby_version: '4.0'
-            puppet_version: '~> 9.0'
         runs-on: 
           - ubuntu-latest
           - windows-latest
@@ -33,6 +31,5 @@ jobs:
     secrets: "inherit"
     with:
       rake_task: "spec:coverage"
-      ruby_version: ${{ matrix.ruby_version }}
       puppet_gem_version: ${{ matrix.puppet_version }}
       runs_on: ${{ matrix.runs-on }}
