@@ -10,9 +10,9 @@
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "PuppetfileResolver::Puppetfile::DocumentCircularDependencyError";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -98,7 +100,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/puppetfile-resolver/puppetfile/validation_errors.rb</dd>
+    <dd>lib/puppetfile-resolver/puppetfile/validation_errors.rb
+</dd>
   </dl>
   
 </div>
@@ -171,9 +174,11 @@
 
       
     </ul>
+    
   
 
 
+  
   
   
   
@@ -208,13 +213,13 @@
       <pre class="lines">
 
 
+42
 43
 44
-45
-46</pre>
+45</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 42</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_puppetfile_document'>puppetfile_document</span><span class='comma'>,</span> <span class='id identifier rubyid_molinillo_error'>molinillo_error</span><span class='rparen'>)</span>
   <span class='ivar'>@puppetfile_document</span> <span class='op'>=</span> <span class='id identifier rubyid_puppetfile_document'>puppetfile_document</span>
@@ -247,13 +252,13 @@
       <pre class="lines">
 
 
+47
 48
 49
-50
-51</pre>
+50</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 48</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 47</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_puppetfile_modules'>puppetfile_modules</span>
   <span class='id identifier rubyid_module_names'>module_names</span> <span class='op'>=</span> <span class='ivar'>@molinillo_error</span><span class='period'>.</span><span class='id identifier rubyid_dependencies'>dependencies</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span><span class='lparen'>(</span><span class='op'>&amp;</span><span class='symbol'>:name</span><span class='rparen'>)</span>
@@ -269,9 +274,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jul 21 07:23:02 2022 by
+  Generated on Wed Oct 21 15:10:22 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.28 (ruby-2.5.9).
+  0.9.45 (ruby-3.2.8).
 </div>
 
     </div>
