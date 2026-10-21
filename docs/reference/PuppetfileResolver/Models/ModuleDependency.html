@@ -10,9 +10,9 @@
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "PuppetfileResolver::Models::ModuleDependency";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,7 +96,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/puppetfile-resolver/models/module_dependency.rb</dd>
+    <dd>lib/puppetfile-resolver/models/module_dependency.rb
+</dd>
   </dl>
   
 </div>
@@ -271,6 +274,7 @@
 
       
     </ul>
+    
   
 
 <div id="constructor_details" class="method_details_list">
@@ -301,6 +305,8 @@
       <pre class="lines">
 
 
+8
+9
 10
 11
 12
@@ -321,12 +327,10 @@
 27
 28
 29
-30
-31
-32</pre>
+30</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='comment'># Munge the name
@@ -430,12 +434,12 @@
       <pre class="lines">
 
 
+6
 7
-8
-9</pre>
+8</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 6</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_owner'>owner</span>
   <span class='ivar'>@owner</span>
@@ -472,12 +476,12 @@
       <pre class="lines">
 
 
-8
-9
-10</pre>
+6
+7
+8</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 6</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_version_requirement'>version_requirement</span>
   <span class='ivar'>@version_requirement</span>
@@ -531,16 +535,16 @@
       <pre class="lines">
 
 
+36
+37
 38
 39
 40
 41
-42
-43
-44</pre>
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 38</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 36</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_satisified_by?'>satisified_by?</span><span class='lparen'>(</span><span class='id identifier rubyid_spec'>spec</span><span class='rparen'>)</span>
   <span class='comment'># Missing modules are special. They should always satisfy any version range because
@@ -569,12 +573,12 @@
       <pre class="lines">
 
 
-34
-35
-36</pre>
+32
+33
+34</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 34</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/models/module_dependency.rb', line 32</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
   <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_owner'>owner</span><span class='embexpr_end'>}</span><span class='tstring_content'>-</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'> </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_version_requirement'>version_requirement</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
@@ -589,9 +593,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jul 21 07:23:02 2022 by
+  Generated on Wed Oct 21 15:10:22 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.28 (ruby-2.5.9).
+  0.9.45 (ruby-3.2.8).
 </div>
 
     </div>

@@ -10,9 +10,9 @@
   
 </title>
 
-  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "PuppetfileResolver::Resolver";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -94,7 +96,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/puppetfile-resolver/resolver.rb</dd>
+    <dd>lib/puppetfile-resolver/resolver.rb
+</dd>
   </dl>
   
 </div>
@@ -224,6 +227,7 @@
 
       
     </ul>
+    
   
 
 <div id="constructor_details" class="method_details_list">
@@ -254,16 +258,16 @@
       <pre class="lines">
 
 
+12
 13
 14
 15
 16
 17
-18
-19</pre>
+18</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/resolver.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/resolver.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_puppetfile_document'>puppetfile_document</span><span class='comma'>,</span> <span class='id identifier rubyid_puppet_version'>puppet_version</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='ivar'>@puppetfile</span> <span class='op'>=</span> <span class='id identifier rubyid_puppetfile_document'>puppetfile_document</span>
@@ -309,12 +313,12 @@
       <pre class="lines">
 
 
+10
 11
-12
-13</pre>
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/resolver.rb', line 11</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/resolver.rb', line 10</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_dependencies_to_resolve'>dependencies_to_resolve</span>
   <span class='ivar'>@dependencies_to_resolve</span>
@@ -401,6 +405,7 @@
       <pre class="lines">
 
 
+24
 25
 26
 27
@@ -423,11 +428,10 @@
 44
 45
 46
-47
-48</pre>
+47</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/resolver.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/resolver.rb', line 24</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_resolve'>resolve</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:ui</span><span class='rbracket'>]</span>
@@ -463,9 +467,9 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Jul 21 07:23:02 2022 by
+  Generated on Wed Oct 21 15:10:22 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.28 (ruby-2.5.9).
+  0.9.45 (ruby-3.2.8).
 </div>
 
     </div>

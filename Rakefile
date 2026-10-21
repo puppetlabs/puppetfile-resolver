@@ -63,3 +63,4 @@ namespace :generate do
     `yard doc`
   end
 end
+
