@@ -10,9 +10,9 @@
   
 </title>
 
-  <link rel="stylesheet" href="../../css/style.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/style.css" type="text/css">
 
-  <link rel="stylesheet" href="../../css/common.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/common.css" type="text/css">
 
 <script type="text/javascript">
   pathId = "PuppetfileResolver::Puppetfile::DocumentResolutionErrorBase";
@@ -27,6 +27,8 @@
 
   </head>
   <body>
+    <div id="main_progress" aria-hidden="true"></div>
+
     <div class="nav_wrap">
       <iframe id="nav" src="../../class_list.html?1"></iframe>
       <div id="resizer"></div>
@@ -96,7 +98,8 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>lib/puppetfile-resolver/puppetfile/validation_errors.rb</dd>
+    <dd>lib/puppetfile-resolver/puppetfile/validation_errors.rb
+</dd>
   </dl>
   
 </div>
@@ -219,9 +222,11 @@ a valid Puppetfile against a dependency resolution</p>
 
       
     </ul>
+    
   
 
 
+  
   
   
   
@@ -260,13 +265,13 @@ a valid Puppetfile against a dependency resolution</p>
       <pre class="lines">
 
 
+83
+84
 85
-86
-87
-88</pre>
+86</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 85</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 83</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='comma'>,</span> <span class='id identifier rubyid_puppet_module'>puppet_module</span><span class='comma'>,</span> <span class='id identifier rubyid_module_specification'>module_specification</span><span class='rparen'>)</span>
   <span class='kw'>super</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='comma'>,</span> <span class='id identifier rubyid_puppet_module'>puppet_module</span><span class='rparen'>)</span>
@@ -309,12 +314,12 @@ a valid Puppetfile against a dependency resolution</p>
       <pre class="lines">
 
 
-83
-84
-85</pre>
+81
+82
+83</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 83</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_module_specification'>module_specification</span>
   <span class='ivar'>@module_specification</span>
@@ -351,12 +356,12 @@ a valid Puppetfile against a dependency resolution</p>
       <pre class="lines">
 
 
+81
 82
-83
-84</pre>
+83</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 82</span>
+      <pre class="code"><span class="info file"># File 'lib/puppetfile-resolver/puppetfile/validation_errors.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_puppet_module'>puppet_module</span>
   <span class='ivar'>@puppet_module</span>
@@ -372,9 +377,9 @@ a valid Puppetfile against a dependency resolution</p>
 </div>
 
       <div id="footer">
-  Generated on Thu Jul 21 07:23:02 2022 by
+  Generated on Wed Oct 21 15:10:22 2026 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.28 (ruby-2.5.9).
+  0.9.45 (ruby-3.2.8).
 </div>
 
     </div>
