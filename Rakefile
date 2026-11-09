@@ -61,6 +61,10 @@ namespace :generate do
   desc 'Generate YARD docs for Github Pages'
   task :docs do
     `yard doc`
+    # YARD bundles jQuery 1.7.1 (CVE-2020-11023). Replace with patched version.
+    require 'fileutils'
+    FileUtils.cp('docs/assets/js/jquery-3.7.1.min.js', 'docs/reference/js/jquery.js')
+    puts 'Replaced YARD jQuery 1.7.1 with jQuery 3.7.1 (CVE-2020-11023)'
   end
 end
 
